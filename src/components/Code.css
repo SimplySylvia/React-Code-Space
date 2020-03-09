@@ -17,21 +17,25 @@
   color: white;
 }
 
+.code--dark .code__header {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.code--light .code__header {
+  color: hsla(0, 0%, 6%, 0.575);
+}
+
 .code--light {
   background-color: white;
   color: #282c34;
 }
 
 .code__header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   padding: 0.5em;
   margin: 0;
   /* background-color: #00000018; */
-  text-align: center;
-  color: hsla(0, 0%, 100%, 0.4);
+  text-align: left;
 }
 
 @media screen and (max-width: 500px) {

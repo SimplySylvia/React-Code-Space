@@ -4,30 +4,25 @@ import './index.css';
 import Code from './components/Code';
 import * as serviceWorker from './serviceWorker';
 
-const codeString = `var numbers = {
-  one: 1,
-  two: 2
-};
+const codeString = `//-------------------------------EXTERNAL MODULES
+const express = require('express');
+//-------------------------------INSTANCED MODULES
+const app = express();
+//-------------------------------CONFIGURATION VARIABLES
+const PORT = process.env.PORT;
+`;
 
-var keys = [];
-
-for (var number in numbers) {
-  if(numbers.hasOwnProperty(number)){
-    keys.push(number)
-  }
-}
-
-keys; // [ 'one', 'two' ]`;
+const codeStringTwo = `//------------------------------START SERVER
+app.listen(PORT, () => {
+  console.log("Listening to port 3000..");
+});`;
 
 ReactDOM.render(
   <div id='app'>
-    <Code dark>
-      <Code.Header>My Cool Code</Code.Header>
-      <Code.Body
-        language='javascript'
-        theme='materialDark'
-        content={codeString}
-      />
+    <Code dark theme='material'>
+      <Code.Header>Server.js</Code.Header>
+      <Code.Body language='js' content={codeString} numbered />
+      <Code.Body language='js' content={codeStringTwo} numbered start={17} />
     </Code>
   </div>,
   document.getElementById('root')

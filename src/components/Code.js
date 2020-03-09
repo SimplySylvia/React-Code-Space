@@ -12,9 +12,9 @@ class Code extends React.Component {
     const { children } = this.props;
     return (
       <div
-        className={`code ${this.props.light ? 'code--light' : ''} ${
-          this.props.dark ? 'code--dark' : ''
-        }`}
+        className={`code ${
+          this.props.light ? `code--light ${this.props.theme}Light` : ''
+        } ${this.props.dark ? `code--dark ${this.props.theme}Dark` : ''}`}
       >
         {React.Children.map(children, child => {
           if (child.type.displayName === 'Header') {
