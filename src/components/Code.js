@@ -1,17 +1,8 @@
 import React from 'react';
 import './Code.css';
 
-const Header = props => {
-  return <div>{props.children}</div>;
-};
-
-Header.displayName = 'Header';
-
-const Body = props => {
-  return <div>{props.children}</div>;
-};
-
-Body.displayName = 'Body';
+import Body from './Body/Body';
+import Header from './Header/Header';
 
 class Code extends React.Component {
   static Header = Header;
@@ -20,8 +11,11 @@ class Code extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
-        Code Block!!
+      <div
+        className={`code ${this.props.light ? 'code--light' : ''} ${
+          this.props.dark ? 'code--dark' : ''
+        }`}
+      >
         {React.Children.map(children, child => {
           if (child.type.displayName === 'Header') {
             return React.cloneElement(child);

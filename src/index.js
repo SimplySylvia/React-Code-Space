@@ -4,11 +4,32 @@ import './index.css';
 import Code from './components/Code';
 import * as serviceWorker from './serviceWorker';
 
+const codeString = `var numbers = {
+  one: 1,
+  two: 2
+};
+
+var keys = [];
+
+for (var number in numbers) {
+  if(numbers.hasOwnProperty(number)){
+    keys.push(number)
+  }
+}
+
+keys; // [ 'one', 'two' ]`;
+
 ReactDOM.render(
-  <Code theme='material' language='js'>
-    <Code.Header>My Cool Code</Code.Header>
-    <Code.Body>Code code code</Code.Body>
-  </Code>,
+  <div id='app'>
+    <Code dark>
+      <Code.Header>My Cool Code</Code.Header>
+      <Code.Body
+        language='javascript'
+        theme='materialDark'
+        content={codeString}
+      />
+    </Code>
+  </div>,
   document.getElementById('root')
 );
 

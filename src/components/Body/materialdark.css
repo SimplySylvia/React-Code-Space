@@ -1,0 +1,205 @@
+.materialDark code[class*='language-'],
+.materialDark pre[class*='language-'] {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  color: #eee;
+  background: #2f2f2f;
+  font-family: Roboto Mono, monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.materialDark code[class*='language-']::-moz-selection,
+.materialDark pre[class*='language-']::-moz-selection,
+.materialDark code[class*='language-'] ::-moz-selection,
+.materialDark pre[class*='language-'] ::-moz-selection {
+  background: #363636;
+}
+
+.materialDark code[class*='language-']::selection,
+.materialDark pre[class*='language-']::selection,
+.materialDark code[class*='language-'] ::selection,
+.materialDark pre[class*='language-'] ::selection {
+  background: #363636;
+}
+
+.materialDark :not(pre) > code[class*='language-'] {
+  white-space: normal;
+  border-radius: 0.2em;
+  padding: 0.1em;
+}
+
+.materialDark pre[class*='language-'] {
+  overflow: auto;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 1.25em 1em;
+}
+
+.materialDark .language-css > code,
+.materialDark .language-sass > code,
+.materialDark .language-scss > code {
+  color: #fd9170;
+}
+
+.materialDark [class*='language-'] .namespace {
+  opacity: 0.7;
+}
+
+.materialDark .token.atrule {
+  color: #c792ea;
+}
+
+.materialDark .token.attr-name {
+  color: #ffcb6b;
+}
+
+.materialDark .token.attr-value {
+  color: #a5e844;
+}
+
+.materialDark .token.attribute {
+  color: #a5e844;
+}
+
+.materialDark .token.boolean {
+  color: #c792ea;
+}
+
+.materialDark .token.builtin {
+  color: #ffcb6b;
+}
+
+.materialDark .token.cdata {
+  color: #80cbc4;
+}
+
+.materialDark .token.char {
+  color: #80cbc4;
+}
+
+.materialDark .token.class {
+  color: #ffcb6b;
+}
+
+.materialDark .token.class-name {
+  color: #f2ff00;
+}
+
+.materialDark .token.comment {
+  color: #616161;
+}
+
+.materialDark .token.constant {
+  color: #c792ea;
+}
+
+.materialDark .token.deleted {
+  color: #ff6666;
+}
+
+.materialDark .token.doctype {
+  color: #616161;
+}
+
+.materialDark .token.entity {
+  color: #ff6666;
+}
+
+.materialDark .token.function {
+  color: #c792ea;
+}
+
+.materialDark .token.hexcode {
+  color: #f2ff00;
+}
+
+.materialDark .token.id {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.materialDark .token.important {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.materialDark .token.inserted {
+  color: #80cbc4;
+}
+
+.materialDark .token.keyword {
+  color: #c792ea;
+}
+
+.materialDark .token.number {
+  color: #fd9170;
+}
+
+.materialDark .token.operator {
+  color: #89ddff;
+}
+
+.materialDark .token.prolog {
+  color: #616161;
+}
+
+.materialDark .token.property {
+  color: #80cbc4;
+}
+
+.materialDark .token.pseudo-class {
+  color: #a5e844;
+}
+
+.materialDark .token.pseudo-element {
+  color: #a5e844;
+}
+
+.materialDark .token.punctuation {
+  color: #89ddff;
+}
+
+.materialDark .token.regex {
+  color: #f2ff00;
+}
+
+.materialDark .token.selector {
+  color: #ff6666;
+}
+
+.materialDark .token.string {
+  color: #a5e844;
+}
+
+.materialDark .token.symbol {
+  color: #c792ea;
+}
+
+.materialDark .token.tag {
+  color: #ff6666;
+}
+
+.materialDark .token.unit {
+  color: #fd9170;
+}
+
+.materialDark .token.url {
+  color: #ff6666;
+}
+
+.materialDark .token.variable {
+  color: #ff6666;
+}
