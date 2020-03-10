@@ -1,0 +1,52 @@
+.code__body {
+  position: relative;
+  width: 100%;
+}
+
+.shine::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  background-image: linear-gradient(
+    to left,
+    #f6f7f807 0%,
+    #f6f7f810 20%,
+    #f6f7f81a 40%,
+    #f6f7f82c 100%
+  );
+  background-repeat: no-repeat;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: 1200px 0;
+  }
+
+  100% {
+    background-position: -1200px 0;
+  }
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 1200px 0;
+  }
+
+  100% {
+    background-position: -1200px 0;
+  }
+}

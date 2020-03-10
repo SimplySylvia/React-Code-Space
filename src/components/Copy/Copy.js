@@ -1,15 +1,28 @@
 import React from 'react';
 
-const Copy = () => {
+const copyToClipboard = content => {
+  var textField = document.createElement('textarea');
+  textField.innerText = content;
+  document.body.appendChild(textField);
+  textField.select();
+  document.execCommand('copy');
+  textField.remove();
+};
+
+const handleClick = props => {
+  props.setCopied(true);
+  copyToClipboard(props.content);
+};
+
+const Copy = props => {
   return (
-    <i className='code__copy'>
+    <i className='code__copy' onClick={() => handleClick(props)}>
       <svg
         data-v-023f9c29=''
         xmlns='http://www.w3.org/2000/svg'
         width='24'
         height='24'
         viewBox='0 0 24 24'
-        // style={{ bottom: '7.5px' }}
       >
         <path data-v-023f9c29='' fill='none' d='M0 0h24v24H0z'></path>
         <path

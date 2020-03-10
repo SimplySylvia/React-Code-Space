@@ -3,7 +3,6 @@ import './Code.css';
 
 import Body from './Body/Body';
 import Header from './Header/Header';
-import Copy from './Copy/Copy';
 import Icon from './Icon/Icon';
 
 class Code extends React.Component {
@@ -22,15 +21,17 @@ class Code extends React.Component {
     const { children } = this.props;
     return (
       <div className={this.generateClasses(this.props)}>
-        {this.props.icon && <Icon icon={this.props.icon} />}
-        {this.props.copy && <Copy />}
+        {this.props.icon && (
+          <Icon language={this.props.language} icon={this.props.icon} />
+        )}
+
         {React.Children.map(children, child => {
           if (!child.type) return child;
           if (child.type.displayName === 'Header') {
             return React.cloneElement(child);
           }
           if (child.type.displayName === 'Body') {
-            return React.cloneElement(child);
+            return React.cloneElement(child, { ...this.props });
           }
           return child;
         })}
