@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
 
-import './materialdark.css';
-import './materialLight.css';
-
-console.log(Prism.plugins);
+import './material.css';
+import './xonokai.css';
+import './monokai.css';
 
 const Body = props => {
   useEffect(() => {
