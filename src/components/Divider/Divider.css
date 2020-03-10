@@ -1,0 +1,17 @@
+.code__divider {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.561);
+}
+
+.code__divider.dots {
+  border: none;
+}
+
+.code__divider.dots:after {
+  content: '. . .';
+  padding-left: 3em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgba(153, 153, 153, 0.561);
+}

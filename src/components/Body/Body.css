@@ -10,6 +10,21 @@
   right: 0;
   left: 0;
   content: '';
+  background-repeat: no-repeat;
+
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+.code--dark .shine::after {
   background-image: linear-gradient(
     to left,
     #f6f7f807 0%,
@@ -17,18 +32,16 @@
     #f6f7f81a 40%,
     #f6f7f82c 100%
   );
-  background-repeat: no-repeat;
+}
 
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-name: placeholderShimmer;
-  -webkit-animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-name: placeholderShimmer;
-  animation-timing-function: linear;
+.code--light .shine::after {
+  background-image: linear-gradient(
+    to left,
+    #1d1d1d07 0%,
+    #1d1d1d10 20%,
+    #1d1d1d1a 40%,
+    #1d1d1d2c 100%
+  );
 }
 
 @-webkit-keyframes placeholderShimmer {

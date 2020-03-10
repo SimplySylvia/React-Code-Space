@@ -1,8 +1,8 @@
 import React from 'react';
 
 const copyToClipboard = content => {
-  var textField = document.createElement('textarea');
-  textField.innerText = content;
+  const textField = document.createElement('textarea');
+  textField.innerHTML = content;
   document.body.appendChild(textField);
   textField.select();
   document.execCommand('copy');

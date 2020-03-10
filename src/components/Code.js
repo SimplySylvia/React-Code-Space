@@ -4,10 +4,12 @@ import './Code.css';
 import Body from './Body/Body';
 import Header from './Header/Header';
 import Icon from './Icon/Icon';
+import Divider from './Divider/Divider';
 
 class Code extends React.Component {
   static Header = Header;
   static Body = Body;
+  static Divider = Divider;
 
   generateClasses = props => {
     const classes = ['code'];
@@ -31,6 +33,9 @@ class Code extends React.Component {
             return React.cloneElement(child);
           }
           if (child.type.displayName === 'Body') {
+            return React.cloneElement(child, { ...this.props });
+          }
+          if (child.type.displayName === 'Divder') {
             return React.cloneElement(child, { ...this.props });
           }
           return child;

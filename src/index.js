@@ -19,9 +19,10 @@ app.listen(PORT, () => {
 
 ReactDOM.render(
   <div id='app'>
-    <Code language='javascript' dark theme='material' shadow icon>
+    <Code language='javascript' dark theme='monokai' shadow icon>
       <Code.Header>Server.js</Code.Header>
       <Code.Body content={codeString} numbered copy />
+      <Code.Divider />
       <Code.Body content={codeStringTwo} numbered start={17} copy />
     </Code>
   </div>,
