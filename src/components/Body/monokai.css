@@ -84,7 +84,7 @@
 .monokai--dark .token.operator,
 .monokai--dark .token.entity,
 .monokai--dark .token.url,
-.language-css .token.string,
+.monokai--dark .language-css .token.string,
 .monokai--dark .style .token.string,
 .monokai--dark .token.variable {
   color: #f8f8f2;
@@ -287,7 +287,7 @@
 .monokai--light .token.operator,
 .monokai--light .token.entity,
 .monokai--light .token.url,
-.language-css .token.string,
+.monokai--light .language-css .token.string,
 .monokai--light .style .token.string,
 .monokai--light .token.variable {
   color: #2f2f2f;
@@ -296,7 +296,7 @@
 .monokai--light .token.atrule,
 .monokai--light .token.attr-value,
 .monokai--light .token.function {
-  color: #e9d414;
+  color: #1434e9;
 }
 
 .monokai--light .token.keyword {

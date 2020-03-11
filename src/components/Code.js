@@ -16,6 +16,7 @@ class Code extends React.Component {
     classes.push(props.light ? `code--light` : 'code--dark');
     classes.push(`${props.theme}--${props.light ? 'light' : 'dark'}`);
     classes.push(`${props.shadow ? 'code--shadow' : ''}`);
+    classes.push(`${props.rounded ? 'rounded' : ''}`);
     return classes.join(' ');
   };
 

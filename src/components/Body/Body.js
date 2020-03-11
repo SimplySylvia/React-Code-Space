@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Copy from '../Copy/Copy';
 import Prism from 'prismjs';
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
@@ -10,6 +10,11 @@ import './monokai.css';
 
 const Body = props => {
   const [copied, setCopied] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  const [setHeight, setHeightState] = useState('0px');
+
+  const content = useRef(null);
+
   useEffect(() => {
     Prism.highlightAll();
   });
@@ -18,18 +23,41 @@ const Body = props => {
     if (copied) setTimeout(() => setCopied(false), 2000);
   }, [copied]);
 
+  function toggleAccordion() {
+    setCollapsed(!collapsed);
+    setHeightState(
+      collapsed === true ? '0px' : `${content.current.scrollHeight}px`
+    );
+  }
+
   return (
     <div className={`code__body ${copied ? 'shine' : ''}`}>
-      <pre
-        style={{ background: 'inherit' }}
-        className={`language-${props.language} ${
-          props.numbered ? 'line-numbers' : ''
-        }`}
-        data-start={props.start ? props.start : 1}
+      {props.collapsable && (
+        <p
+          className={`code__body__collapse ${collapsed ? 'rotate-right' : ''}`}
+          onClick={() => {
+            toggleAccordion();
+          }}
+        >
+          {props.collapsableText ? props.collapsableText : 'Reveal'}
+        </p>
+      )}
+      <div
+        ref={content}
+        className={`open`}
+        style={props.collapsable ? { maxHeight: `${setHeight}` } : {}}
       >
-        <code style={{ background: 'inherit' }}>{props.content}</code>
-      </pre>
-      {props.copy && <Copy setCopied={setCopied} content={props.content} />}
+        <pre
+          style={{ background: 'inherit' }}
+          className={`language-${props.language} ${
+            props.numbered ? 'line-numbers' : ''
+          }`}
+          data-start={props.start ? props.start : 1}
+        >
+          <code style={{ background: 'inherit' }}>{props.content}</code>
+        </pre>
+        {props.copy && <Copy setCopied={setCopied} content={props.content} />}
+      </div>
     </div>
   );
 };

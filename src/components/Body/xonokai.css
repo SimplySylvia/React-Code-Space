@@ -298,14 +298,14 @@
 
 .xonokai--light .token.attr-name,
 .xonokai--light .token.string {
-  color: #e6d06c;
+  color: #2351e9;
 }
 
 .xonokai--light .token.entity,
 .xonokai--light .token.url,
 .xonokai--light .language-css .token.string,
 .xonokai--light .style .token.string {
-  color: #e6d06c;
+  color: #2351e9;
 }
 
 .xonokai--light .token.selector,

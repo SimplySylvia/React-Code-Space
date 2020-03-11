@@ -1,12 +1,13 @@
 .code {
   position: relative;
-  border-radius: 10px;
   padding: 0.7em;
   overflow: hidden;
-  max-width: 1000px;
   min-width: 300px;
   width: 100%;
-  margin: 0.5em;
+}
+
+.rounded {
+  border-radius: 10px;
 }
 
 .code--shadow {
@@ -29,7 +30,7 @@
 }
 
 .code--light {
-  background-color: white;
+  background-color: rgb(255, 253, 247);
   color: #282c34;
 }
 
@@ -103,10 +104,4 @@
   margin: 0;
   /* background-color: #00000018; */
   text-align: left;
-}
-
-@media screen and (max-width: 500px) {
-  .code {
-    margin: 0;
-  }
 }
