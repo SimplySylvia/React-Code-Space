@@ -135,25 +135,6 @@
   white-space: pre;
 }
 
-.monokai--dark pre[data-line] .line-highlight:before,
-.monokai--dark pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: 0.4em;
-  left: 0.6em;
-  min-width: 1em;
-  padding: 0.2em 0.5em;
-  background-color: rgba(255, 255, 255, 0.4);
-  color: black;
-  font: bold 65%/1 sans-serif;
-  height: 1em;
-  line-height: 1em;
-  text-align: center;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
-}
-
 .monokai--dark pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-end);
   top: auto;

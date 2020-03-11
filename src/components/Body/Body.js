@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Copy from '../Copy/Copy';
 import Prism from 'prismjs';
+
+import 'prismjs/components/prism-sass';
+import 'prismjs/components/prism-jsx';
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
 import 'prismjs/plugins/line-highlight/prism-line-highlight';
 

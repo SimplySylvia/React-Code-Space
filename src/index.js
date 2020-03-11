@@ -7,8 +7,8 @@ import snippets from './snippets.json';
 
 ReactDOM.render(
   <div id='app'>
-    <Code language='javascript' dark theme='material' shadow icon rounded>
-      <Code.Header>Server.js</Code.Header>
+    <Code language='jsx' dark theme='material' icon shadow rounded>
+      <Code.Header>Server.jsx</Code.Header>
       <Code.Body content={snippets[0]} numbered highlight='9' />
       <Code.Divider />
       <Code.Doc>
@@ -24,8 +24,8 @@ ReactDOM.render(
       />
     </Code>
 
-    <Code language='css' light theme='monokai' icon shadow>
-      <Code.Header>Divider.css</Code.Header>
+    <Code language='sass' dark theme='monokai' icon shadow>
+      <Code.Header>Divider.scss</Code.Header>
       <Code.Body content={snippets[2]} numbered />
       <Code.Doc>
         Here you can leave a little Documentation about a code body or to leave
@@ -34,9 +34,9 @@ ReactDOM.render(
       <Code.Body content={snippets[3]} numbered start={10} highlight='12' />
     </Code>
 
-    <Code language='html' dark theme='material' icon shadow>
+    <Code language='html' light theme='material' icon shadow rounded>
       <Code.Header>index.html</Code.Header>
-      <Code.Body content={snippets[4]} numbered />
+      <Code.Body content={snippets[4]} />
     </Code>
   </div>,
   document.getElementById('root')

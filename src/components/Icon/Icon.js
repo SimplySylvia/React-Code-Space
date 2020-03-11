@@ -8,7 +8,8 @@ const getIcon = ({ icon, language }) => {
   if (icon === 'javascript') return 'devicon-nodejs-plain';
   if (icon === 'html') return 'devicon-html5-plain';
   if (icon === 'css') return 'devicon-css3-plain';
-  if (icon === 'react') return 'devicon-react-original';
+  if (icon === 'sass') return 'devicon-sass-original';
+  if (icon === 'jsx') return 'devicon-react-original';
 };
 
 const Icon = props => {
