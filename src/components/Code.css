@@ -3,7 +3,8 @@
   padding: 0.7em;
   overflow: hidden;
   min-width: 300px;
-  width: 100%;
+  width: 99%;
+  margin-top: 1em;
 }
 
 .rounded {

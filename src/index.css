@@ -5,9 +5,12 @@ body {
 * {
   box-sizing: border-box;
 }
+
 #app {
   /* justify-content: center; */
   background-color: white;
   width: 100vw;
+  height: max-content;
   padding: 1em;
+  margin: 0;
 }

@@ -5,11 +5,13 @@ import Body from './Body/Body';
 import Header from './Header/Header';
 import Icon from './Icon/Icon';
 import Divider from './Divider/Divider';
+import Doc from './Doc/Doc';
 
 class Code extends React.Component {
   static Header = Header;
   static Body = Body;
   static Divider = Divider;
+  static Doc = Doc;
 
   generateClasses = props => {
     const classes = ['code'];
@@ -31,6 +33,9 @@ class Code extends React.Component {
         {React.Children.map(children, child => {
           if (!child.type) return child;
           if (child.type.displayName === 'Header') {
+            return React.cloneElement(child);
+          }
+          if (child.type.displayName === 'Doc') {
             return React.cloneElement(child);
           }
           if (child.type.displayName === 'Body') {

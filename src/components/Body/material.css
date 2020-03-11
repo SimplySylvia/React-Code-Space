@@ -204,6 +204,29 @@
   color: #ff6666;
 }
 
+.material--dark pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.material--dark pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.material--dark pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
 .material--dark pre[class*='language-'].line-numbers {
   position: relative;
   padding-left: 3.8em;
@@ -451,6 +474,29 @@
 
 .material--light .token.variable {
   color: #e53935;
+}
+
+.material--light pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.material--light pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(56, 56, 55, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.material--light pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
 }
 
 .material--light pre[class*='language-'].line-numbers {

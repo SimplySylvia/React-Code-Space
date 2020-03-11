@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Copy from '../Copy/Copy';
 import Prism from 'prismjs';
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
+import 'prismjs/plugins/line-highlight/prism-line-highlight';
 
 import './Body.css';
 import './material.css';
@@ -53,6 +54,7 @@ const Body = props => {
             props.numbered ? 'line-numbers' : ''
           }`}
           data-start={props.start ? props.start : 1}
+          data-line={props.highlight ? props.highlight : null}
         >
           <code style={{ background: 'inherit' }}>{props.content}</code>
         </pre>

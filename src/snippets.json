@@ -1,0 +1,7 @@
+[
+  "//-------------------------------EXTERNAL MODULES\nconst express = require('express');\nfunction(){\n\n}\n//-------------------------------INSTANCED MODULES\nconst app = express();\n//-------------------------------CONFIGURATION VARIABLES\nconst PORT = process.env.PORT;\n",
+  "//------------------------------START SERVER\napp.listen(PORT, () => {\n  console.log(\"Listening to port 3000..\");\n});",
+  ".code__divider {\n  margin: 0;\n  padding: 0;\n  border-bottom: 1px solid rgba(153, 153, 153, 0.561);\n}\n\n.code__divider.dots {\n  border: none;\n}\n",
+  ".code__divider.dots:after {\n  content: '. . .';\n  padding-left: 3em;\n  font-size: 1.5em;\n  font-weight: bolder;\n  color: rgba(153, 153, 153, 0.561);\n}",
+  "<body>\n<noscript>\nYou need to enable JavaScript to run this app.\n</noscript>\n<div id='root'></div>\n<!--\nThis HTML file is a template.\nIf you open it directly in the browser, you will see an empty page.\nYou can add webfonts, meta tags, or analytics to this file.\nThe build step will place the bundled scripts into the <body> tag.\n\nTo begin the development, run `npm start` or `yarn start`.\nTo create a production bundle, use `npm run build` or `yarn build`.\n-->\n</body>"
+]
