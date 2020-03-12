@@ -1,5 +1,7 @@
 # React Code Block Component
 
+- uses jetbrains mono for readability
+
 ## Code
 
 ### props
@@ -49,3 +51,9 @@
 ### props
 
 - dots
+
+#### TODO
+
+- add two panel split to allow for side by side view
+- diff?
+- on blur

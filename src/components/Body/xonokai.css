@@ -15,10 +15,10 @@
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: normal;
-  font-family: Menlo, Monaco, 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 1em;
   color: #76d9e6;
   text-shadow: none;
+  line-height: 1.5em;
 }
 
 .xonokai--dark pre > code[class*='language-'] {
@@ -226,10 +226,10 @@
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: normal;
-  font-family: Menlo, Monaco, 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 1em;
   color: #76d9e6;
   text-shadow: none;
+  line-height: 1.5em;
 }
 
 .xonokai--light pre > code[class*='language-'] {

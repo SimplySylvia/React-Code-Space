@@ -7,7 +7,6 @@
   word-wrap: normal;
   color: #eee;
   background: #2f2f2f;
-  font-family: Roboto Mono, monospace;
   font-size: 1em;
   line-height: 1.5em;
 
@@ -270,14 +269,14 @@
 
 .material--light code[class*='language-'],
 .material--light pre[class*='language-'] {
+  color: #90a4ae;
+  background: #fafafa;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  color: #90a4ae;
-  background: #fafafa;
-  font-family: Roboto Mono, monospace;
+  background: #2f2f2f;
   font-size: 1em;
   line-height: 1.5em;
 

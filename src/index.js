@@ -7,7 +7,7 @@ import snippets from './snippets.json';
 
 ReactDOM.render(
   <div id='app'>
-    <Code language='jsx' dark theme='material' icon shadow rounded>
+    <Code language='jsx' dark theme='xonokai' icon shadow rounded>
       <Code.Header>Server.jsx</Code.Header>
       <Code.Body content={snippets[0]} numbered highlight='9' />
       <Code.Divider />
@@ -24,7 +24,24 @@ ReactDOM.render(
       />
     </Code>
 
-    <Code language='sass' dark theme='monokai' icon shadow>
+    <Code language='jsx' light theme='xonokai' icon shadow rounded>
+      <Code.Header>Server.jsx</Code.Header>
+      <Code.Body content={snippets[0]} numbered highlight='9' />
+      <Code.Divider />
+      <Code.Doc>
+        Here you can leave a little Documentation about a code body or to leave
+        a note about something.
+      </Code.Doc>
+      <Code.Body
+        content={snippets[1]}
+        numbered
+        start={17}
+        // collapsable
+        // collapsableText='How do we start our server?...'
+      />
+    </Code>
+
+    <Code language='sass' light theme='monokai' icon shadow>
       <Code.Header>Divider.scss</Code.Header>
       <Code.Body content={snippets[2]} numbered />
       <Code.Doc>
