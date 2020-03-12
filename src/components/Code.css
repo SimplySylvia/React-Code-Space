@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'),
+    url(../fonts/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
 .code {
   position: relative;
   padding: 0.7em;
@@ -5,6 +11,7 @@
   min-width: 300px;
   width: 99%;
   margin-top: 1em;
+  font-family: 'JetBrains Mono' !important;
 }
 
 .rounded {
