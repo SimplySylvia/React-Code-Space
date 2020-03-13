@@ -9,21 +9,19 @@ ReactDOM.render(
   <div id='app'>
     <Code language='jsx' dark theme='material' icon shadow>
       <Code.Header>Server.jsx</Code.Header>
-      <Code.Body content={snippets[0]} numbered highlight='3' />
-      <Code.Divider />
-      <Code.Doc>
-        Here you can leave a little Documentation about a code body or to leave
-        a note about something.
-      </Code.Doc>
-      <Code.Body
-        content={snippets[1]}
-        numbered
-        start={17}
-        copy
-
-        // collapsable
-        // collapsableText='How do we start our server?...'
-      />
+      <Code.Split total={3}>
+        <Code.Body content={snippets[0]} numbered />
+        <Code.Body content={snippets[0]} numbered />
+        <Code.Body
+          content={snippets[1]}
+          numbered
+          start={17}
+          copy
+          language='css'
+          // collapsable
+          // collapsableText='How do we start our server?...'
+        />
+      </Code.Split>
     </Code>
     {/* 
     <Code language='jsx' light theme='xonokai' neomorph icon rounded>
