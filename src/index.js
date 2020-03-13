@@ -7,9 +7,9 @@ import snippets from './snippets.json';
 
 ReactDOM.render(
   <div id='app'>
-    <Code language='jsx' dark theme='xonokai' icon shadow rounded>
+    <Code language='jsx' dark theme='material' icon shadow>
       <Code.Header>Server.jsx</Code.Header>
-      <Code.Body content={snippets[0]} numbered highlight='9' />
+      <Code.Body content={snippets[0]} numbered highlight='3' />
       <Code.Divider />
       <Code.Doc>
         Here you can leave a little Documentation about a code body or to leave
@@ -19,14 +19,16 @@ ReactDOM.render(
         content={snippets[1]}
         numbered
         start={17}
+        copy
+
         // collapsable
         // collapsableText='How do we start our server?...'
       />
     </Code>
-
-    <Code language='jsx' light theme='xonokai' icon shadow rounded>
+    {/* 
+    <Code language='jsx' light theme='xonokai' neomorph icon rounded>
       <Code.Header>Server.jsx</Code.Header>
-      <Code.Body content={snippets[0]} numbered highlight='9' />
+      <Code.Body content={snippets[0]} numbered highlight='9' copy />
       <Code.Divider />
       <Code.Doc>
         Here you can leave a little Documentation about a code body or to leave
@@ -36,12 +38,13 @@ ReactDOM.render(
         content={snippets[1]}
         numbered
         start={17}
+        copy
         // collapsable
         // collapsableText='How do we start our server?...'
       />
-    </Code>
+    </Code> */}
 
-    <Code language='sass' light theme='monokai' icon shadow>
+    {/* <Code language='sass' light theme='monokai' icon shadow>
       <Code.Header>Divider.scss</Code.Header>
       <Code.Body content={snippets[2]} numbered />
       <Code.Doc>
@@ -54,7 +57,7 @@ ReactDOM.render(
     <Code language='html' light theme='material' icon shadow rounded>
       <Code.Header>index.html</Code.Header>
       <Code.Body content={snippets[4]} />
-    </Code>
+    </Code> */}
   </div>,
   document.getElementById('root')
 );

@@ -20,6 +20,7 @@
   - xonokai
 - icon
 - shadow
+- neomorph
 - rounded
 
 ## Code Header
@@ -39,6 +40,7 @@
 - collapsable
 - collapsableText
 - copy
+- blur
 
 ## Code Doc
 
@@ -56,4 +58,3 @@
 
 - add two panel split to allow for side by side view
 - diff?
-- on blur

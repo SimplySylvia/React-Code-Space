@@ -35,7 +35,11 @@ const Body = props => {
   }
 
   return (
-    <div className={`code__body ${copied ? 'shine' : ''}`}>
+    <div
+      className={`code__body ${copied ? 'shine' : ''} ${
+        props.blurred ? 'blur' : ''
+      }`}
+    >
       {props.collapsable && (
         <p
           className={`code__body__collapse ${collapsed ? 'rotate-right' : ''}`}
@@ -60,8 +64,8 @@ const Body = props => {
           data-line={props.highlight ? props.highlight : null}
         >
           <code style={{ background: 'inherit' }}>{props.content}</code>
+          {props.copy && <Copy setCopied={setCopied} content={props.content} />}
         </pre>
-        {props.copy && <Copy setCopied={setCopied} content={props.content} />}
       </div>
     </div>
   );

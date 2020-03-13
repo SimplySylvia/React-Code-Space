@@ -3,6 +3,30 @@
   width: 100%;
 }
 
+.code__body.blur pre {
+  filter: blur(7px);
+  transition: filter 0.5s;
+}
+
+.code__body.blur::after {
+  content: 'Reveal';
+  font-size: 2em;
+  font-weight: 500;
+  position: absolute;
+  top: calc(50% - 1em);
+  left: calc(50% - 2em);
+  z-index: 10;
+  transition: opacity 0.3s;
+}
+
+.code__body.blur:hover pre {
+  filter: blur(0px);
+}
+
+.code__body.blur:hover::after {
+  opacity: 0;
+}
+
 .shine::after {
   position: absolute;
   top: 0;
@@ -42,9 +66,6 @@
     #1d1d1d1a 40%,
     #1d1d1d2c 100%
   );
-}
-
-.collapsed {
 }
 
 .open {

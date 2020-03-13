@@ -117,3 +117,23 @@ code {
   /* background-color: #00000018; */
   text-align: left;
 }
+
+.rounded .code__header {
+  border-radius: 10px;
+}
+
+.code--dark.neo {
+  box-shadow: 16px 16px 32px #22252c, -16px -16px 32px #2e333c;
+}
+
+.code--dark.neo .code__header {
+  box-shadow: 5px 5px 7px #24282f, -5px -5px 7px #2c3039;
+}
+
+.code--light.neo {
+  box-shadow: 10px 10px 31px #cfcdc8, -10px -10px 31px #ffffff;
+}
+
+.code--light.neo .code__header {
+  box-shadow: 5px 5px 7px #e6e4de, -5px -5px 7px #ffffff;
+}

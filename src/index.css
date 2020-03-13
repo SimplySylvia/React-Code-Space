@@ -1,16 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 * {
   box-sizing: border-box;
 }
+#root {
+  height: 100%;
+}
 
 #app {
-  /* justify-content: center; */
-  background-color: white;
+  background-color: #282c34;
   width: 100vw;
-  height: max-content;
+  height: 100%;
   padding: 1em;
   margin: 0;
 }

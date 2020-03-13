@@ -5,24 +5,21 @@
 */
 .xonokai--dark code[class*='language-'],
 .xonokai--dark pre[class*='language-'] {
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 1em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.5em;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: normal;
-  font-size: 1em;
-  color: #76d9e6;
-  text-shadow: none;
-  line-height: 1.5em;
-}
-
-.xonokai--dark pre > code[class*='language-'] {
-  font-size: 1em;
 }
 
 .xonokai--dark pre[class*='language-'],
@@ -31,10 +28,10 @@
 }
 
 .xonokai--dark pre[class*='language-'] {
-  padding: 15px;
+  padding: 1em;
+  margin: 0.5em 0;
   border-radius: 4px;
-  overflow: auto;
-  position: relative;
+  overflow-x: auto;
 }
 
 .xonokai--dark pre[class*='language-'] code {
