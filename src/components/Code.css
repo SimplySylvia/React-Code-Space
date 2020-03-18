@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src: local('JetBrains Mono'),
-    url(../fonts/JetBrainsMono-Regular.woff2) format('woff2');
+    url(./fonts/JetBrainsMono-Regular.woff2) format('woff2');
 }
 
 .code {
