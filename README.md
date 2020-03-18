@@ -1,6 +1,7 @@
 # React Code Space
 
-[![MIT License][license-image]][license-url]
+![](https://img.shields.io/npm/l/react-code-space?style=for-the-badge)
+![](https://img.shields.io/npm/v/react-code-space?style=for-the-badge)
 
 Welcome! React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
 
