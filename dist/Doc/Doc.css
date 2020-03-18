@@ -1,0 +1,20 @@
+.code--light .code__doc {
+  width: 100%;
+  padding: 1em;
+  /* background-color: rgba(223, 221, 221, 0.486); */
+  background: #fffdf7;
+  box-shadow: inset 20px 20px 60px #d9d7d2, inset -20px -20px 60px #ffffff;
+}
+
+.code--dark .code__doc {
+  width: 100%;
+  padding: 1em;
+  position: relative;
+  border-radius: 0px;
+  background: #333b45;
+  box-shadow: inset 20px 20px 60px #2b323b, inset -20px -20px 60px #3b444f;
+}
+
+.rounded .code__doc {
+  border-radius: 5px;
+}

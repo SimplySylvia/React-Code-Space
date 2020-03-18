@@ -1,0 +1,418 @@
+/**
+* xonokai theme for JavaScript, CSS and HTML
+* based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* license: MIT; http://moox.mit-license.org/
+*/
+.xonokai--dark code[class*='language-'],
+.xonokai--dark pre[class*='language-'] {
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 1em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.5em;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.xonokai--dark pre[class*='language-'],
+.xonokai--dark :not(pre) > code[class*='language-'] {
+  background: #2a2a2a;
+}
+
+.xonokai--dark pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.xonokai--dark pre[class*='language-'] code {
+  white-space: pre;
+  display: block;
+}
+
+.xonokai--dark :not(pre) > code[class*='language-'] {
+  padding: 0.15em 0.2em 0.05em;
+  border-radius: 0.3em;
+  border: 0.13em solid #7a6652;
+  box-shadow: 1px 1px 0.3em -0.1em #000 inset;
+}
+
+.xonokai--dark .token.namespace {
+  opacity: 0.7;
+}
+
+.xonokai--dark .token.comment,
+.xonokai--dark .token.prolog,
+.xonokai--dark .token.doctype,
+.xonokai--dark .token.cdata {
+  color: #6f705e;
+}
+
+.xonokai--dark .token.operator,
+.xonokai--dark .token.boolean,
+.xonokai--dark .token.number {
+  color: #a77afe;
+}
+
+.xonokai--dark .token.attr-name,
+.xonokai--dark .token.string {
+  color: #e6d06c;
+}
+
+.xonokai--dark .token.entity,
+.xonokai--dark .token.url,
+.xonokai--dark .language-css .token.string,
+.xonokai--dark .style .token.string {
+  color: #e6d06c;
+}
+
+.xonokai--dark .token.selector,
+.xonokai--dark .token.inserted {
+  color: #a6e22d;
+}
+
+.xonokai--dark .token.atrule,
+.xonokai--dark .token.attr-value,
+.xonokai--dark .token.keyword,
+.xonokai--dark .token.important,
+.xonokai--dark .token.deleted {
+  color: #ef3b7d;
+}
+
+.xonokai--dark .token.regex,
+.xonokai--dark .token.statement {
+  color: #76d9e6;
+}
+
+.xonokai--dark .token.placeholder,
+.xonokai--dark .token.variable {
+  color: #fff;
+}
+
+.xonokai--dark .token.important,
+.xonokai--dark .token.statement,
+.xonokai--dark .token.bold {
+  font-weight: bold;
+}
+
+.xonokai--dark .token.punctuation {
+  color: #bebec5;
+}
+
+.xonokai--dark .token.entity {
+  cursor: help;
+}
+
+.xonokai--dark .token.italic {
+  font-style: italic;
+}
+
+.xonokai--dark code.language-markup {
+  color: #f9f9f9;
+}
+
+.xonokai--dark code.language-markup .token.tag {
+  color: #ef3b7d;
+}
+
+.xonokai--dark code.language-markup .token.attr-name {
+  color: #a6e22d;
+}
+
+.xonokai--dark code.language-markup .token.attr-value {
+  color: #e6d06c;
+}
+
+.xonokai--dark code.language-markup .token.style,
+.xonokai--dark code.language-markup .token.script {
+  color: #76d9e6;
+}
+
+.xonokai--dark code.language-markup .token.script .token.keyword {
+  color: #76d9e6;
+}
+
+/* Line highlight plugin */
+.xonokai--dark pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.xonokai--dark pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.xonokai--dark pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.xonokai--dark pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.xonokai--dark pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.xonokai--dark .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xonokai--dark .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.xonokai--dark .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/**
+* xonokai light theme for JavaScript, CSS and HTML
+* based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* license: MIT; http://moox.mit-license.org/
+*/
+.xonokai--light code[class*='language-'],
+.xonokai--light pre[class*='language-'] {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  font-size: 1em;
+  color: #76d9e6;
+  text-shadow: none;
+  line-height: 1.5em;
+}
+
+.xonokai--light pre > code[class*='language-'] {
+  font-size: 1em;
+}
+
+.xonokai--light pre[class*='language-'],
+.xonokai--light :not(pre) > code[class*='language-'] {
+  background: #2a2a2a;
+}
+
+.xonokai--light pre[class*='language-'] {
+  padding: 15px;
+  border-radius: 4px;
+  overflow: auto;
+  position: relative;
+}
+
+.xonokai--light pre[class*='language-'] code {
+  white-space: pre;
+  display: block;
+}
+
+.xonokai--light :not(pre) > code[class*='language-'] {
+  padding: 0.15em 0.2em 0.05em;
+  border-radius: 0.3em;
+  border: 0.13em solid #7a6652;
+  box-shadow: 1px 1px 0.3em -0.1em #000 inset;
+}
+
+.xonokai--light .token.namespace {
+  opacity: 0.7;
+}
+
+.xonokai--light .token.comment,
+.xonokai--light .token.prolog,
+.xonokai--light .token.doctype,
+.xonokai--light .token.cdata {
+  color: #6f705e;
+}
+
+.xonokai--light .token.operator,
+.xonokai--light .token.boolean,
+.xonokai--light .token.number {
+  color: #a77afe;
+}
+
+.xonokai--light .token.attr-name,
+.xonokai--light .token.string {
+  color: #2351e9;
+}
+
+.xonokai--light .token.entity,
+.xonokai--light .token.url,
+.xonokai--light .language-css .token.string,
+.xonokai--light .style .token.string {
+  color: #2351e9;
+}
+
+.xonokai--light .token.selector,
+.xonokai--light .token.inserted {
+  color: #a6e22d;
+}
+
+.xonokai--light .token.atrule,
+.xonokai--light .token.attr-value,
+.xonokai--light .token.keyword,
+.xonokai--light .token.important,
+.xonokai--light .token.deleted {
+  color: #ef3b7d;
+}
+
+.xonokai--light .token.regex,
+.xonokai--light .token.statement {
+  color: #76d9e6;
+}
+
+.xonokai--light .token.placeholder,
+.xonokai--light .token.variable {
+  color: #fff;
+}
+
+.xonokai--light .token.important,
+.xonokai--light .token.statement,
+.xonokai--light .token.bold {
+  font-weight: bold;
+}
+
+.xonokai--light .token.punctuation {
+  color: #bebec5;
+}
+
+.xonokai--light .token.entity {
+  cursor: help;
+}
+
+.xonokai--light .token.italic {
+  font-style: italic;
+}
+
+.xonokai--light code.language-markup {
+  color: #f9f9f9;
+}
+
+.xonokai--light code.language-markup .token.tag {
+  color: #ef3b7d;
+}
+
+.xonokai--light code.language-markup .token.attr-name {
+  color: #a6e22d;
+}
+
+.xonokai--light code.language-markup .token.attr-value {
+  color: #e6d06c;
+}
+
+.xonokai--light code.language-markup .token.style,
+.xonokai--light code.language-markup .token.script {
+  color: #76d9e6;
+}
+
+.xonokai--light code.language-markup .token.script .token.keyword {
+  color: #76d9e6;
+}
+
+/* Line highlight plugin */
+.xonokai--light pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.xonokai--light pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(56, 56, 55, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.xonokai--light pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.xonokai--light pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.xonokai--light pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.xonokai--light .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xonokai--light .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.xonokai--light .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}

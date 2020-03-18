@@ -1,0 +1,363 @@
+/**
+ * Monokai theme for Prism.JS
+ *
+ * @author Martijn Swaagman
+ * @license MIT 2015
+ */
+.monokai--dark code[class*='language-'],
+.monokai--dark pre[class*='language-'] {
+  color: #f8f8f2;
+
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 1em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.5em;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.monokai--dark pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+.monokai--dark :not(pre) > code[class*='language-'],
+.monokai--dark pre[class*='language-'] {
+  background: #272822;
+}
+
+.monokai--dark :not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.monokai--dark .token.comment,
+.monokai--dark .token.prolog,
+.monokai--dark .token.doctype,
+.monokai--dark .token.cdata {
+  color: #778090;
+}
+
+.monokai--dark .token.punctuation {
+  color: #f8f8f2;
+}
+
+.monokai--dark .namespace {
+  opacity: 0.7;
+}
+
+.monokai--dark .token.property,
+.monokai--dark .token.tag,
+.monokai--dark .token.constant,
+.monokai--dark .token.symbol,
+.monokai--dark .token.deleted {
+  color: #f92672;
+}
+
+.monokai--dark .token.boolean,
+.monokai--dark .token.number {
+  color: #ae81ff;
+}
+
+.monokai--dark .token.selector,
+.monokai--dark .token.attr-name,
+.monokai--dark .token.string,
+.monokai--dark .token.char,
+.monokai--dark .token.builtin,
+.monokai--dark .token.inserted {
+  color: #a6e22e;
+}
+
+.monokai--dark .token.operator,
+.monokai--dark .token.entity,
+.monokai--dark .token.url,
+.monokai--dark .language-css .token.string,
+.monokai--dark .style .token.string,
+.monokai--dark .token.variable {
+  color: #f8f8f2;
+}
+
+.monokai--dark .token.atrule,
+.monokai--dark .token.attr-value,
+.monokai--dark .token.function {
+  color: #e6db74;
+}
+
+.monokai--dark .token.keyword {
+  color: #f92672;
+}
+
+.monokai--dark .token.regex,
+.monokai--dark .token.important {
+  color: #fd971f;
+}
+
+.monokai--dark .token.important,
+.monokai--dark .token.bold {
+  font-weight: bold;
+}
+.monokai--dark .token.italic {
+  font-style: italic;
+}
+
+.monokai--dark .token.entity {
+  cursor: help;
+}
+
+/* Line highlight plugin */
+.monokai--dark pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.monokai--dark pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.monokai--dark pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.monokai--dark pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.monokai--dark pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.monokai--dark .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.monokai--dark .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.monokai--dark .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/**
+ * Monokai theme for Prism.JS
+ *
+ * @author Martijn Swaagman
+ * @license MIT 2015
+ */
+.monokai--light code[class*='language-'],
+.monokai--light pre[class*='language-'] {
+  color: #2f2f2f;
+  /* text-shadow: 0 1px rgba(0, 0, 0, 0.3); */
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 1em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.5em;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.monokai--light pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+.monokai--light :not(pre) > code[class*='language-'],
+.monokai--light pre[class*='language-'] {
+  background: #272822;
+}
+
+.monokai--light :not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.monokai--light .token.comment,
+.monokai--light .token.prolog,
+.monokai--light .token.doctype,
+.monokai--light .token.cdata {
+  color: #5f6775;
+}
+
+.monokai--light .token.punctuation {
+  color: #2f2f2f;
+}
+
+.monokai--light .namespace {
+  opacity: 0.7;
+}
+
+.monokai--light .token.property,
+.monokai--light .token.tag,
+.monokai--light .token.constant,
+.monokai--light .token.symbol,
+.monokai--light .token.deleted {
+  color: #f92672;
+}
+
+.monokai--light .token.boolean,
+.monokai--light .token.number {
+  color: #ae81ff;
+}
+
+.monokai--light .token.selector,
+.monokai--light .token.attr-name,
+.monokai--light .token.string,
+.monokai--light .token.char,
+.monokai--light .token.builtin,
+.monokai--light .token.inserted {
+  color: #6a9513;
+}
+
+.monokai--light .token.operator,
+.monokai--light .token.entity,
+.monokai--light .token.url,
+.monokai--light .language-css .token.string,
+.monokai--light .style .token.string,
+.monokai--light .token.variable {
+  color: #2f2f2f;
+}
+
+.monokai--light .token.atrule,
+.monokai--light .token.attr-value,
+.monokai--light .token.function {
+  color: #1434e9;
+}
+
+.monokai--light .token.keyword {
+  color: #f92672;
+}
+
+.monokai--light .token.regex,
+.monokai--light .token.important {
+  color: #fd971f;
+}
+
+.monokai--light .token.important,
+.monokai--light .token.bold {
+  font-weight: bold;
+}
+.monokai--light .token.italic {
+  font-style: italic;
+}
+
+.monokai--light .token.entity {
+  cursor: help;
+}
+
+/* Line highlight plugin */
+.monokai--light pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.monokai--light pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(56, 56, 55, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.monokai--light pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.monokai--light pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.monokai--light pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.monokai--light .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.monokai--light .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.monokai--light .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}

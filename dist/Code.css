@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'),
+    url(../fonts/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+.code {
+  position: relative;
+  padding: 0.7em;
+  overflow: hidden;
+  min-width: 300px;
+  width: 99%;
+  margin-top: 1em;
+  font-family: 'JetBrains Mono';
+}
+
+code {
+  font-family: 'JetBrains Mono';
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.code--shadow {
+  -webkit-box-shadow: 0px 3px 18px -2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 3px 18px -2px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 3px 18px -2px rgba(0, 0, 0, 0.46);
+}
+
+.code--dark {
+  background-color: #282c34;
+  color: white;
+}
+
+.code--dark .code__header {
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.code--light .code__header {
+  color: hsla(0, 0%, 6%, 0.575);
+}
+
+.code--light {
+  background-color: rgb(255, 253, 247);
+  color: #282c34;
+}
+
+.code__icon {
+  min-width: 30px;
+  width: max-content;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.code__icon::before {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.code__copy {
+  min-width: 30px;
+  width: max-content;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  text-align: center;
+  line-height: 30px;
+  z-index: 1;
+}
+
+.code--light .code__icon {
+  color: #4b4b4b75;
+}
+
+.code--dark .code__icon {
+  color: #d6d6d675;
+}
+
+.code--light .code__copy svg path:nth-child(2) {
+  fill: #4b4b4b75;
+}
+
+.code--dark .code__copy svg path:nth-child(2) {
+  fill: #d6d6d675;
+}
+
+.code--dark .code__copy:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.code--light .code__copy:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.code--light .code__copy:hover svg path:nth-child(2) {
+  fill: #4e4d4dd0;
+}
+
+.code--dark .code__copy:hover svg path:nth-child(2) {
+  fill: #d6d6d6d0;
+}
+
+.code__header {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0;
+  /* background-color: #00000018; */
+  text-align: left;
+}
+
+.rounded .code__header {
+  border-radius: 10px;
+}
+
+.code--dark.neo {
+  box-shadow: 16px 16px 32px #22252c, -16px -16px 32px #2e333c;
+}
+
+.code--dark.neo .code__header {
+  box-shadow: 5px 5px 7px #24282f, -5px -5px 7px #2c3039;
+}
+
+.code--light.neo {
+  box-shadow: 10px 10px 31px #cfcdc8, -10px -10px 31px #ffffff;
+}
+
+.code--light.neo .code__header {
+  box-shadow: 5px 5px 7px #e6e4de, -5px -5px 7px #ffffff;
+}

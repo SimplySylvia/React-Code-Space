@@ -1,0 +1,147 @@
+.code__body {
+  position: relative;
+  width: 100%;
+}
+
+.code__body.blur pre {
+  filter: blur(7px);
+  transition: filter 0.5s;
+}
+
+.code__body.blur::after {
+  content: 'Reveal';
+  font-size: 2em;
+  font-weight: 500;
+  position: absolute;
+  top: calc(50% - 1em);
+  left: calc(50% - 2em);
+  z-index: 10;
+  transition: opacity 0.3s;
+}
+
+.code__body.blur:hover pre {
+  filter: blur(0px);
+}
+
+.code__body.blur:hover::after {
+  opacity: 0;
+}
+
+.shine::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: '';
+  background-repeat: no-repeat;
+
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+.code--dark .shine::after {
+  background-image: linear-gradient(
+    to left,
+    #f6f7f807 0%,
+    #f6f7f810 20%,
+    #f6f7f81a 40%,
+    #f6f7f82c 100%
+  );
+}
+
+.code--light .shine::after {
+  background-image: linear-gradient(
+    to left,
+    #1d1d1d07 0%,
+    #1d1d1d10 20%,
+    #1d1d1d1a 40%,
+    #1d1d1d2c 100%
+  );
+}
+
+.open {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.code__body__collapse {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.code__body__collapse:hover {
+  background: rgba(153, 153, 153, 0.05);
+}
+
+.code__body__collapse p {
+  display: inline;
+}
+
+.code__body__collapse::after {
+  content: '\276F';
+  margin-left: 0.5em;
+  font-size: 1em;
+  transform: rotate(0deg);
+  transition: transform 0.26s linear;
+}
+
+.rotate-right.code__body__collapse::after {
+  position: absolute;
+  transform: rotate(90deg);
+  transition: transform 0.26s linear;
+}
+
+pre::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.rounded pre::-webkit-scrollbar-track,
+.rounded pre::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+
+.code--dark pre::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.code--dark pre::-webkit-scrollbar-thumb {
+  background: #9797b6;
+}
+
+.code--light pre::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.code--light pre::-webkit-scrollbar-thumb {
+  background: #777676;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: 1200px 0;
+  }
+
+  100% {
+    background-position: -1200px 0;
+  }
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 1200px 0;
+  }
+
+  100% {
+    background-position: -1200px 0;
+  }
+}

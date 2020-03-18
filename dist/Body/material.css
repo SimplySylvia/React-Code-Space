@@ -1,0 +1,540 @@
+.material--dark code[class*='language-'],
+.material--dark pre[class*='language-'] {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  color: #eee;
+  background: #2f2f2f;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.material--dark code[class*='language-']::-moz-selection,
+.material--dark pre[class*='language-']::-moz-selection,
+.material--dark code[class*='language-'] ::-moz-selection,
+.material--dark pre[class*='language-'] ::-moz-selection {
+  background: #363636;
+}
+
+.material--dark code[class*='language-']::selection,
+.material--dark pre[class*='language-']::selection,
+.material--dark code[class*='language-'] ::selection,
+.material--dark pre[class*='language-'] ::selection {
+  background: #363636;
+}
+
+.material--dark :not(pre) > code[class*='language-'] {
+  white-space: normal;
+  border-radius: 0.2em;
+  padding: 0.1em;
+}
+
+.material--dark pre[class*='language-'] {
+  overflow: auto;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 0.25em 1em;
+}
+
+.material--dark .language-css > code,
+.material--dark .language-sass > code,
+.material--dark .language-scss > code {
+  color: #fd9170;
+}
+
+.material--dark [class*='language-'] .namespace {
+  opacity: 0.7;
+}
+
+.material--dark .token.atrule {
+  color: #c792ea;
+}
+
+.material--dark .token.attr-name {
+  color: #ffcb6b;
+}
+
+.material--dark .token.attr-value {
+  color: #a5e844;
+}
+
+.material--dark .token.attribute {
+  color: #a5e844;
+}
+
+.material--dark .token.boolean {
+  color: #c792ea;
+}
+
+.material--dark .token.builtin {
+  color: #ffcb6b;
+}
+
+.material--dark .token.cdata {
+  color: #80cbc4;
+}
+
+.material--dark .token.char {
+  color: #80cbc4;
+}
+
+.material--dark .token.class {
+  color: #ffcb6b;
+}
+
+.material--dark .token.class-name {
+  color: #f2ff00;
+}
+
+.material--dark .token.comment {
+  color: #616161;
+}
+
+.material--dark .token.constant {
+  color: #c792ea;
+}
+
+.material--dark .token.deleted {
+  color: #ff6666;
+}
+
+.material--dark .token.doctype {
+  color: #616161;
+}
+
+.material--dark .token.entity {
+  color: #ff6666;
+}
+
+.material--dark .token.function {
+  color: #c792ea;
+}
+
+.material--dark .token.hexcode {
+  color: #f2ff00;
+}
+
+.material--dark .token.id {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.material--dark .token.important {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.material--dark .token.inserted {
+  color: #80cbc4;
+}
+
+.material--dark .token.keyword {
+  color: #c792ea;
+}
+
+.material--dark .token.number {
+  color: #fd9170;
+}
+
+.material--dark .token.operator {
+  color: #89ddff;
+}
+
+.material--dark .token.prolog {
+  color: #616161;
+}
+
+.material--dark .token.property {
+  color: #80cbc4;
+}
+
+.material--dark .token.pseudo-class {
+  color: #a5e844;
+}
+
+.material--dark .token.pseudo-element {
+  color: #a5e844;
+}
+
+.material--dark .token.punctuation {
+  color: #89ddff;
+}
+
+.material--dark .token.regex {
+  color: #f2ff00;
+}
+
+.material--dark .token.selector {
+  color: #ff6666;
+}
+
+.material--dark .token.string {
+  color: #a5e844;
+}
+
+.material--dark .token.symbol {
+  color: #c792ea;
+}
+
+.material--dark .token.tag {
+  color: #ff6666;
+}
+
+.material--dark .token.unit {
+  color: #fd9170;
+}
+
+.material--dark .token.url {
+  color: #ff6666;
+}
+
+.material--dark .token.variable {
+  color: #ff6666;
+}
+
+.material--dark pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.material--dark pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.material--dark pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.material--dark pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.material--dark pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.material--dark .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.material--dark .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.material--dark .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+.material--light code[class*='language-'],
+.material--light pre[class*='language-'] {
+  color: #90a4ae;
+  background: #fafafa;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  background: #2f2f2f;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.material--light code[class*='language-']::-moz-selection,
+.material--light pre[class*='language-']::-moz-selection,
+.material--light code[class*='language-'] ::-moz-selection,
+.material--light pre[class*='language-'] ::-moz-selection {
+  background: #cceae7;
+  color: #263238;
+}
+
+.material--light code[class*='language-']::selection,
+.material--light pre[class*='language-']::selection,
+.material--light code[class*='language-'] ::selection,
+.material--light pre[class*='language-'] ::selection {
+  background: #cceae7;
+  color: #263238;
+}
+
+.material--light :not(pre) > code[class*='language-'] {
+  white-space: normal;
+  border-radius: 0.2em;
+  padding: 0.1em;
+}
+
+.material--light pre[class*='language-'] {
+  overflow: auto;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 0.25em 1em;
+}
+
+.material--light .language-css > code,
+.material--light .language-sass > code,
+.material--light .language-scss > code {
+  color: #f76d47;
+}
+
+.material--light [class*='language-'] .namespace {
+  opacity: 0.7;
+}
+
+.material--light .token.atrule {
+  color: #7c4dff;
+}
+
+.material--light .token.attr-name {
+  color: #39adb5;
+}
+
+.material--light .token.attr-value {
+  color: #f6a434;
+}
+
+.material--light .token.attribute {
+  color: #f6a434;
+}
+
+.material--light .token.boolean {
+  color: #7c4dff;
+}
+
+.material--light .token.builtin {
+  color: #39adb5;
+}
+
+.material--light .token.cdata {
+  color: #39adb5;
+}
+
+.material--light .token.char {
+  color: #39adb5;
+}
+
+.material--light .token.class {
+  color: #39adb5;
+}
+
+.material--light .token.class-name {
+  color: #6182b8;
+}
+
+.material--light .token.comment {
+  color: #aabfc9;
+}
+
+.material--light .token.constant {
+  color: #7c4dff;
+}
+
+.material--light .token.deleted {
+  color: #e53935;
+}
+
+.material--light .token.doctype {
+  color: #aabfc9;
+}
+
+.material--light .token.entity {
+  color: #e53935;
+}
+
+.material--light .token.function {
+  color: #7c4dff;
+}
+
+.material--light .token.hexcode {
+  color: #f76d47;
+}
+
+.material--light .token.id {
+  color: #7c4dff;
+  font-weight: bold;
+}
+
+.material--light .token.important {
+  color: #7c4dff;
+  font-weight: bold;
+}
+
+.material--light .token.inserted {
+  color: #39adb5;
+}
+
+.material--light .token.keyword {
+  color: #7c4dff;
+}
+
+.material--light .token.number {
+  color: #f76d47;
+}
+
+.material--light .token.operator {
+  color: #39adb5;
+}
+
+.material--light .token.prolog {
+  color: #aabfc9;
+}
+
+.material--light .token.property {
+  color: #39adb5;
+}
+
+.material--light .token.pseudo-class {
+  color: #f6a434;
+}
+
+.material--light .token.pseudo-element {
+  color: #f6a434;
+}
+
+.material--light .token.punctuation {
+  color: #39adb5;
+}
+
+.material--light .token.regex {
+  color: #6182b8;
+}
+
+.material--light .token.selector {
+  color: #e53935;
+}
+
+.material--light .token.string {
+  color: #f6a434;
+}
+
+.material--light .token.symbol {
+  color: #7c4dff;
+}
+
+.material--light .token.tag {
+  color: #e53935;
+}
+
+.material--light .token.unit {
+  color: #f76d47;
+}
+
+.material--light .token.url {
+  color: #e53935;
+}
+
+.material--light .token.variable {
+  color: #e53935;
+}
+
+.material--light pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.material--light pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(56, 56, 55, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.material--light pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.material--light pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+.material--light pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.material--light .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.material--light .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.material--light .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
