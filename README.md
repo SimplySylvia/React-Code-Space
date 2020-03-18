@@ -1,10 +1,10 @@
-# React Code Block Component
+# React Code Space
 
-- uses jetbrains mono for readability
+Welcome! React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
 
 ## Code
 
-Code is the base import. It will recieve the below compound components to for formatting.
+Code is the base import. It will recieve the below compound components for formatting your code.
 
 ```js
 import Code from 'react-code-space';
@@ -31,31 +31,84 @@ export default App;
 
 ## Code Header
 
-### Header props
+Header can recieve any child and output it in a small container within the Code Space;
 
-- none
+```js
+import Code from 'react-code-space';
+
+function App() {
+  return (
+    <Code dark theme='material' language='javascript'>
+      <Code.Header>A lovely Header!</Code.Header>
+    </Code>
+  );
+}
+
+export default App;
+```
 
 ## Code Body
 
-### props
+Body is the syntax highlighting portion of the code space. This allows multiple code blocks within a code space.
 
-- content
-- numbered
-- start
-- highlight
-- collapsable
-- collapsableText
-- copy
-- blur
+```js
+import Code from 'react-code-space';
+
+const codeString = '//Your code here!';
+
+function App() {
+  return (
+    <Code dark theme='material' language='javascript'>
+      <Code.Header>A lovely Header!</Code.Header>
+      <Code.Body content={codeString} />
+    </Code>
+  );
+}
+
+export default App;
+```
+
+### Body Props
+
+| Name            | Description                                       | Options                                    | Usage                                                                 |
+| --------------- | ------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------- |
+| content         | recieves a string of code to display              | a string                                   | `<Code.Body content={codeString} />`                                  |
+| numbered        | adds line numbers to code output                  | default is true                            | `<Code.Body numbered/>`                                               |
+| start           | starting point for line numbers                   | default is 1. Will recieve any number      | `<Code.Body numbered start={17}/>`                                    |
+| highlight       | accepts string numbers to highlight lines of code | string of line numbers. will accept ranges | `<Code.Body highlight={"4"} />`,`<Code.Body content={"4,8-11,16"} />` |
+| collapsable     | makes the code body an animated dropdown          | default is true                            | `<Code.Body collapsable />`                                           |
+| collapsableText | sets the tect for the animated dropdown           | a string                                   | `<Code.Body collapsableText={"Here is the code!"} />`                 |
+| copy            | adds a copy to clipboard functionality            | default is true                            | `<Code.Body copy />`                                                  |
+| blur            | adds a blurred effect to reveal on hover          | default is true                            | `<Code.Body blur />`                                                  |
 
 ## Code Doc
 
-### props
+Doc is an embedded slot in the code space to add detailed text inline with the code space.
 
-- none
+```js
+import Code from 'react-code-space';
+
+const codeString = '//Your code here!';
+
+function App() {
+  return (
+    <Code dark theme='material' language='javascript'>
+      <Code.Header>A lovely Header!</Code.Header>
+      <Code.Body content={codeString} />
+      <Code.Doc>Some simple text explaining the code above or below.</Code.Doc>
+    </Code>
+  );
+}
+
+export default App;
+```
 
 ## Code Divider
 
-### props
+Divider is a simple split to seperate the code blocks with a themed horizontal rule. This can also be styled with three dots with the dots property.
 
-- dots
+### Divider Props
+
+| Name | Description                     | Options         | Usage                  |
+| ---- | ------------------------------- | --------------- | ---------------------- |
+| dots | changes the style to three dots | default is true | `<Code.Divider dots/>` |
