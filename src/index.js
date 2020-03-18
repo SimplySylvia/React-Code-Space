@@ -9,53 +9,15 @@ ReactDOM.render(
   <div id='app'>
     <Code language='jsx' dark theme='material' icon shadow>
       <Code.Header>Server.jsx</Code.Header>
-      <Code.Split total={3}>
-        <Code.Body content={snippets[0]} numbered />
-        <Code.Body content={snippets[0]} numbered />
-        <Code.Body
-          content={snippets[1]}
-          numbered
-          start={17}
-          copy
-          language='css'
-          // collapsable
-          // collapsableText='How do we start our server?...'
-        />
-      </Code.Split>
-    </Code>
-    {/* 
-    <Code language='jsx' light theme='xonokai' neomorph icon rounded>
-      <Code.Header>Server.jsx</Code.Header>
-      <Code.Body content={snippets[0]} numbered highlight='9' copy />
-      <Code.Divider />
-      <Code.Doc>
-        Here you can leave a little Documentation about a code body or to leave
-        a note about something.
-      </Code.Doc>
+      <Code.Body content={snippets[0]} numbered />
       <Code.Body
         content={snippets[1]}
         numbered
         start={17}
         copy
-        // collapsable
-        // collapsableText='How do we start our server?...'
+        language='css'
       />
-    </Code> */}
-
-    {/* <Code language='sass' light theme='monokai' icon shadow>
-      <Code.Header>Divider.scss</Code.Header>
-      <Code.Body content={snippets[2]} numbered />
-      <Code.Doc>
-        Here you can leave a little Documentation about a code body or to leave
-        a note about something. This can be as long or as short as you like.
-      </Code.Doc>
-      <Code.Body content={snippets[3]} numbered start={10} highlight='12' />
     </Code>
-
-    <Code language='html' light theme='material' icon shadow rounded>
-      <Code.Header>index.html</Code.Header>
-      <Code.Body content={snippets[4]} />
-    </Code> */}
   </div>,
   document.getElementById('root')
 );

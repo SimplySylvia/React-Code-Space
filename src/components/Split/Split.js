@@ -3,8 +3,14 @@ import './Split.css';
 
 const generateChildren = props => {
   const children = [];
-
-  for (let i = 0; i < props.total; i++) {
+  console.log(props);
+  let total;
+  total =
+    props.total || typeof props.children === 'object'
+      ? 1
+      : props.children.length;
+  console.log(total);
+  for (let i = 0; i < total; i++) {
     const child = props.children[i];
 
     if (!child.type) children.push(child);
