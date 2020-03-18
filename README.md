@@ -1,5 +1,7 @@
 # React Code Space
 
+[![MIT License][license-image]][license-url]
+
 Welcome! React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
 
 ## Code
