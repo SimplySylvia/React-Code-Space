@@ -1,5 +1,7 @@
 # React Code Space
 
+<img src="./assets/codespace.png" alt="logo"  width="200px"/>
+
 ![](https://img.shields.io/npm/l/react-code-space?style=for-the-badge)
 ![](https://img.shields.io/npm/v/react-code-space?style=for-the-badge)
 
@@ -30,7 +32,7 @@ export default App;
 | icon     | adds an icon of the language. default is language.  | react, javascript, css, scss, html | `<Code icon>`, `<Code icon="css"/>` |
 | shadow   | adds a shadow to the code space                     | default is true                    | `<Code shadow>`                     |
 | neomorph | adds a neomorphism design effect to the code space. | default is true                    | `<Code neomorph>`                   |
-| shadow   | adds a border radius to the code space              | default is true                    | `<Code rounded>`                    |
+| rounded   | adds a border radius to the code space              | default is true                    | `<Code rounded>`                    |
 
 ## Code Header
 
@@ -80,7 +82,7 @@ export default App;
 | start           | starting point for line numbers                   | default is 1. Will recieve any number      | `<Code.Body numbered start={17}/>`                                    |
 | highlight       | accepts string numbers to highlight lines of code | string of line numbers. will accept ranges | `<Code.Body highlight={"4"} />`,`<Code.Body content={"4,8-11,16"} />` |
 | collapsable     | makes the code body an animated dropdown          | default is true                            | `<Code.Body collapsable />`                                           |
-| collapsableText | sets the tect for the animated dropdown           | a string                                   | `<Code.Body collapsableText={"Here is the code!"} />`                 |
+| collapsableText | sets the text for the animated dropdown           | a string                                   | `<Code.Body collapsableText={"Here is the code!"} />`                 |
 | copy            | adds a copy to clipboard functionality            | default is true                            | `<Code.Body copy />`                                                  |
 | blur            | adds a blurred effect to reveal on hover          | default is true                            | `<Code.Body blur />`                                                  |
 

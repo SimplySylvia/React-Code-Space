@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Code.css';
 
 import Body from './Body/Body';
@@ -66,5 +67,16 @@ class Code extends React.Component {
     );
   }
 }
+
+Code.propTypes = {
+  light: PropTypes.bool,
+  dark: PropTypes.bool,
+  theme: PropTypes.string,
+  language: PropTypes.string,
+  shadow: PropTypes.bool,
+  rounded: PropTypes.bool,
+  neomorph: PropTypes.bool,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+};
 
 export default Code;
