@@ -1,4 +1,4 @@
-<img src="./assets/codespace.png" alt="logo"  width="200px"/>
+<img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/codespace.png" alt="logo"  width="200px"/>
 
 # React Code Space
 React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
