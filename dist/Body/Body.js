@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import Copy from '../Copy/Copy';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-sass';
@@ -58,4 +59,14 @@ const Body = props => {
 };
 
 Body.displayName = 'Body';
+Body.propTypes = {
+  content: PropTypes.string,
+  numbered: PropTypes.bool,
+  start: PropTypes.number,
+  highlight: PropTypes.string,
+  collapsable: PropTypes.bool,
+  collapsableText: PropTypes.string,
+  copy: PropTypes.bool,
+  blur: PropTypes.bool
+};
 export default Body;

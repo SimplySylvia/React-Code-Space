@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Code.css';
 import Body from './Body/Body';
 import Header from './Header/Header';
@@ -71,4 +72,14 @@ Code.Body = Body;
 Code.Divider = Divider;
 Code.Doc = Doc;
 Code.Split = Split;
+Code.propTypes = {
+  light: PropTypes.bool,
+  dark: PropTypes.bool,
+  theme: PropTypes.string,
+  language: PropTypes.string,
+  shadow: PropTypes.bool,
+  rounded: PropTypes.bool,
+  neomorph: PropTypes.bool,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+};
 export default Code;

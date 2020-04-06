@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Divider.css';
 
 const Divider = props => {
@@ -7,5 +8,8 @@ const Divider = props => {
   });
 };
 
-export default Divider;
 Divider.displayName = 'Divider';
+Divider.propTypes = {
+  dots: PropTypes.bool
+};
+export default Divider;
