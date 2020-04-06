@@ -1,11 +1,11 @@
-# React Code Space
-
 <img src="./assets/codespace.png" alt="logo"  width="200px"/>
+
+# React Code Space
+React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
 
 ![](https://img.shields.io/npm/l/react-code-space?style=for-the-badge)
 ![](https://img.shields.io/npm/v/react-code-space?style=for-the-badge)
 
-Welcome! React Code Space is a stylized code syntax highlighter for your documentation/ lesson building.
 
 ## Code
 
