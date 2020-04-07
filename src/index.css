@@ -11,9 +11,16 @@ body {
 }
 
 #app {
-  background-color: #282c34;
   width: 100vw;
   height: 100%;
   padding: 1em;
   margin: 0;
+}
+
+.app--light {
+  background-color: rgb(255, 253, 247);
+}
+
+.app--dark {
+  background-color: #282c34;
 }
