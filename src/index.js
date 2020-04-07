@@ -14,6 +14,7 @@ ReactDOM.render(
         copy
         language='css'
       />
+      <Code.Doc>Some simple text explaining the code above or below.</Code.Doc>
     </Code>
   </div>,
   document.getElementById('root')

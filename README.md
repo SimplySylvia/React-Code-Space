@@ -113,6 +113,10 @@ function App() {
 export default App;
 ```
 
+<p align="center">
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_code_doc.png?raw=true" alt="dark doc" width="800px" >
+<p>
+
 ## Code Divider
 
 Divider is a simple split to seperate the code blocks with a themed horizontal rule. This can also be styled with three dots with the dots property.
