@@ -126,3 +126,8 @@ Divider is a simple split to seperate the code blocks with a themed horizontal r
 | Name | Description                     | Options         | Usage                  |
 | ---- | ------------------------------- | --------------- | ---------------------- |
 | dots | changes the style to three dots | default is true | `<Code.Divider dots/>` |
+
+
+<p align="center">
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_divider.png?raw=true" alt="dark doc" width="800px" >
+<p>
