@@ -11,9 +11,9 @@ React Code Space is a stylized code syntax highlighter for your documentation/ l
 
 Code is the base import. It will recieve the below compound components for formatting your code.
 <p align="center">
-  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_basic.png?raw=true" alt="basic dark" width="800px" >
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/basic_dark.png?raw=true" alt="basic dark" width="800px" >
 
-  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/light_basic.png?raw=true" alt="basic dark" width="800px">
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/basic_light.png?raw=true" alt="basic light" width="800px">
 <p>
 
 ```js
@@ -129,5 +129,5 @@ Divider is a simple split to seperate the code blocks with a themed horizontal r
 
 
 <p align="center">
-  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_divider.png?raw=true" alt="dark doc" width="800px" >
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/divider_dark.png?raw=true" alt="dark doc" width="800px" >
 <p>
