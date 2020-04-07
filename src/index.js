@@ -8,15 +8,11 @@ import snippets from './snippets.json';
 ReactDOM.render(
   <div id='app'>
     <Code language='javascript' dark theme='material' icon shadow>
-      <Code.Header>Server.js</Code.Header>
-      <Code.Body content={snippets[0]} numbered  copy/>
-      <Code.Divider />
       <Code.Body
         content={snippets[1]}
         numbered
         start={17}
         copy
-        language='css'
       />
      
     </Code>

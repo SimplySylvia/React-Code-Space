@@ -91,6 +91,10 @@ export default App;
 | copy            | adds a copy to clipboard functionality            | default is true                            | `<Code.Body copy />`                                                  |
 | blur            | adds a blurred effect to reveal on hover          | default is true                            | `<Code.Body blur />`                                                  |
 
+<p align="center">
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/body_dark.png?raw=true" alt="dark doc" width="800px" >
+<p>
+
 ## Code Doc
 
 Doc is an embedded slot in the code space to add detailed text inline with the code space.
