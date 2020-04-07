@@ -11,6 +11,10 @@ React Code Space is a stylized code syntax highlighter for your documentation/ l
 
 Code is the base import. It will recieve the below compound components for formatting your code.
 
+<img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_basic.png?raw=true" alt="basic dark" width="500px">
+
+<img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/light_basic.png?raw=true" alt="basic dark" width="500px">
+
 ```js
 import Code from 'react-code-space';
 

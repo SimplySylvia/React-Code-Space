@@ -6,9 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import snippets from './snippets.json';
 
 ReactDOM.render(
-  <div id='app' className="app--light">
-    <Code language='javascript' light theme='material' icon shadow>
-      <Code.Header>Server.jsx</Code.Header>
+  <div id='app' className="app--dark">
+    <Code language='javascript' dark theme='material' icon shadow>
+      <Code.Header>Server.js</Code.Header>
       <Code.Body
         content={snippets[1]}
         copy
