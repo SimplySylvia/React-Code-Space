@@ -129,5 +129,5 @@ Divider is a simple split to seperate the code blocks with a themed horizontal r
 
 
 <p align="center">
-  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/divider_dark.png?raw=true" alt="dark doc" width="800px" >
+  <img src="https://github.com/DaltonHart/React-Code-Space/blob/master/assets/dark_divider.png?raw=true" alt="dark doc" width="800px" >
 <p>
